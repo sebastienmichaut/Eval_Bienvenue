@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-        <div class="image">
+        <img class="imagesHeader" name='imageHeader'>
         <div class="nav-bar">
             <div class="fixed-top">
                 <div class="collapse" id="navbarToggleExternalContent">
@@ -35,85 +35,98 @@
                     </button>
                 </nav>
             </div>
-            <div class="container">
-                <div class="bienvenue">
+        </div>
+        <div class="container">
+            <div class="bienvenue">
+                <div>
                     <h1>Bienvenue à Bord</h1>
+                </div>
+                <div>
                     <h6>Location de voiture 24h/24 et 7j/7</h3>
                 </div>
-                <div class="sous-container">
-                    <div class="searchbar">
-                        <select class="form-select" id="inputGroupSelect01">
+            </div>
+            <div class="sous-container">
+                <div class="searchbar">
+                    <div class="bar">
+                        <select class="form-select rounded border-0 p-2" id="inputGroupSelect01">
                             <option selected>Adresse de départ</option>
                             <option value="1">Paris</option>
                             <option value="2">Bordeaux</option>
                             <option value="3">Lyon</option>
                         </select>
-                        <div class="input-group mx-3">
-                            <input type="text" class="form-control" placeholder="Début de location" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <button class="fas fa-calendar-alt" type="button" id="button-addon2"></button>
-                        </div>
-                        <div class="input-group mx-3">
-                            <input type="text" class="form-control" placeholder="Fin de location" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <button class="fas fa-calendar-alt" type="button" id="button-addon2"></button>
-                            <button class="validate px-3 mx-3" type="button">Valider ma recherche</button>
-                        </div>
                     </div>
+                    <div class="bar input-group">
+                        <input class="rounded border-0" type="text" placeholder="Début de location">
+                        <button class="fas fa-calendar-alt rounded border-0" type="button" id="button-addon2"></button>
+                    </div>
+                    <div class="bar input-group">
+                        <input class="rounded border-0" type="text"  placeholder="Fin de location">
+                        <button class="fas fa-calendar-alt rounded border-0" type="button" id="button-addon2"></button>
+                    </div>
+                    <div class="bar">
+                        <button class="validate rounded border-0" type="button">Valider ma recherche</button>
+                    </div>            
                 </div>
             </div>
-        </div>
         </div>
     </header>
     <Main>
         <div class="tri">
             <p>7 résultats</p>
-            <select class="btn btn-secondary" id="inputGroupSelect01">
-                <option selected>Trier par</option>
-                <option value="1">Prix croissant</option>
-                <option value="2">Prix décroissant</option>
-            </select>
+            <div>
+                <select class="btnTri btn" id="inputGroupSelect01">
+                    <option selected>Trier par</option>
+                    <option value="1">Prix croissant</option>
+                    <option value="2">Prix décroissant</option>
+                </select>
+            </div>
         </div>
-        <div class="vehicules ml-5">
+        <div class="vehicules">
             <div class="vehicule border-bottom pb-5">
-                <!-- <button id="moveleft1" class="fas fa-caret-left"></button> -->
-                <div class="imgveh1"><img src="/images/vehicule1.png" alt=""></div>
-                <!-- <button id="moveright1" class="fas fa-caret-right"></button> -->
+                <div class="carrousel">
+                    <div>
+                        <button name="prev" class="fas fa-caret-left border-0 bg-white"></button>
+                    </div>
+                    <div>
+                        <img id="imgveh1" src="/images/vehicule1.png" name="imgVeh" alt="">
+                    </div>
+                    <div>
+                        <button name="next" class="fas fa-caret-right border-0 bg-white"></button>
+                    </div>
+                </div>
                 <div class=caract1>
                     <h2>Peugeot 208</h2>
                     <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
                     <p>999 € - Agence de Paris</p>
                     <button class="buttonveh" type="submit">Réserver et Payer</button>
-                    <div></div>
                 </div>
             </div>
-            <div class="vehicule border-bottom pb-5">
-                <div class="imgveh2"><img src="/images/vehicule2.png" alt=""></div>
-                <div class=caract1>
-                    <h2>Ford Focus</h2>
-                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
-                    <p>999 €</p>
-                    <button class="buttonveh" type="submit">Réserver et Payer</button>
-                    <div></div>
-                </div>
+        </div>
+        <div class="vehicule border-bottom pb-5">
+            <div id="imgveh2"><img src="/images/vehicule2.png" alt=""></div>
+            <div class=caract1>
+                <h2>Ford Focus</h2>
+                <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
+                <p>999 €</p>
+                <button class="buttonveh" type="submit">Réserver et Payer</button>
             </div>
-            <div class="vehicule border-bottom pb-5">
-                <div class="imgveh3"><img src="/images/vehicule3.png" alt=""></div>
-                <div class=caract1>
-                    <h2>Audi A1</h2>
-                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,55/km supplémentaire).</p>
-                    <p>1100 € - Agence de Paris</p>
-                    <button class="buttonveh" type="submit">Réserver et Payer</button>
-                    <div></div>
-                </div>
+        </div>
+        <div class="vehicule border-bottom pb-5">
+            <div id="imgveh3"><img src="/images/vehicule3.png" alt=""></div>
+            <div class=caract1>
+                <h2>Audi A1</h2>
+                <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,55/km supplémentaire).</p>
+                <p>1100 € - Agence de Paris</p>
+                <button class="buttonveh" type="submit">Réserver et Payer</button>
             </div>
-            <div class="vehicule border-bottom pb-5">
-                <div class="imgveh4"><img src="/images/vehicule4.png" alt=""></div>
-                <div class=caract1>
-                    <h2>Opel Mokka</h2>
-                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,4/km supplémentaire).</p>
-                    <p>1150 € - Agence de Paris</p>
-                    <button class="buttonveh" type="submit">Réserver et Payer</button>
-                    <div></div>
-                </div>
+        </div>
+        <div class="vehicule border-bottom pb-5">
+            <div id="imgveh4"><img src="/images/vehicule4.png" alt=""></div>
+            <div class=caract1>
+                <h2>Opel Mokka</h2>
+                <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,4/km supplémentaire).</p>
+                <p>1150 € - Agence de Paris</p>
+                <button class="buttonveh" type="submit">Réserver et Payer</button>
             </div>
         </div>
     </Main>

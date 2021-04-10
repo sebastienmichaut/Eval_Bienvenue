@@ -5,33 +5,62 @@
 /* ------------- header -------------------- */
 
 header{
-width: 100%;
-}
-.image{
-    background-image: url(/images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.container{
     width: 100%;
+    height: 500px;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.imagesHeader{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
 
 .bienvenue{
+    width: 100%;
     color: white;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sous-container{
+    width: 100%;
+    position: absolute;
+    top: 300%;
+    left: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    /* background-color: #ecf0f1;
+    opacity: 0.5; */
 }
 .searchbar{
-    margin-top: 250px;
-
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     height: 40px;
+}
+.bar{
+    width: auto;
+    height: auto;
 }
 .validate{
     background-color: #4A934A;
+    height: 40px;
+    width: 200px;
+    text-align: center;
 }
 
 /* --------------- Main --------------- */
@@ -43,12 +72,23 @@ main{
 }
 .tri{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px;
+    width: 100%;
+}
+.btnTri{
+    background-color: #e3e6e6;
+    margin-right: -100px;
+}
+.vehicules{
     width: 60%;
 }
-
 .vehicule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carrousel{
     display: flex;
     align-items: center;
 }
