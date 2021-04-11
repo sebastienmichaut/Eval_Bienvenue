@@ -23,16 +23,33 @@ window.onload = changeImg;
 
 // -------------- carrousel ----------------
 
-var imageVehicule = [
-  "/images.vehicule1.png",
-  "/images.vehicule2.png",
-  "/images.vehicule3.png",
-  "/images.vehicule4.png",
+var imagesVehicule = [
+  "/images/vehicule1.png",
+  "/images/vehicule2.png",
+  "/images/vehicule3.png",
+  "/images/vehicule4.png",
 ];
 
-// let prevButton = document.getElementsByName('prev');
-// let nextButton = document.getElementsByName('next');
+var prevButton = document.querySelector('.prev');
+var nextButton = document.querySelector('.next');
+var img = document.querySelector('.imgveh1');
 
-// nextButton.addEventListener("click",function () {
-//   console.log('clic')
-// })
+prevButton.addEventListener("click", function () {
+  if (i > 0) {
+    i--;
+  } 
+  else {
+    i = imagesVehicule.length -1;
+  }
+  img.src = imagesVehicule[i];
+});
+
+nextButton.addEventListener("click",function () {
+  if (i < imagesVehicule.length - 1) {
+    i++;
+  } 
+  else {
+    i = 0;
+  }
+  img.src = imagesVehicule[i];
+})
