@@ -110,3 +110,18 @@ for (var i = 0; i < nextButton.length; i++) {
     }
   });
 }
+
+// ------------------ Scroll Infini --------------------------
+
+// $(document).ready(function () {
+//   $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     var limit = $(".loop").position().top;
+//     if (scroll >= limit) {
+//       window.scrollTo(0, 700); // 1 to avoid conflicts
+//     }
+//     if (scroll == 0) {
+//       window.scrollTo(0, limit);
+//     }
+//   });
+// });
