@@ -23,7 +23,7 @@ window.onload = changeImg;
 
 // -------------- carrousel ----------------
 
-// var i = 0 ;
+
 var imagesVehicule = [
   "/images/vehicule1.png",
   "/images/vehicule2.png",
@@ -31,66 +31,41 @@ var imagesVehicule = [
   "/images/vehicule4.png",
 ];
 
-// var prevButton = document.querySelector('.prev');
-// var nextButton = document.querySelector('.next');
-// var img = document.querySelector('.imgveh1');
-
-// prevButton.addEventListener("click", function () {
-//   if (i > 0) {
-//     i--;
-//   } 
-//   else {
-//     i = imagesVehicule.length -1;
-//   }
-//   img.src = imagesVehicule[i];
-// });
-
-// nextButton.addEventListener("click",function () {
-//   if (i < imagesVehicule.length - 1) {
-//     i++;
-//   } 
-//   else {
-//     i = 0;
-//   }
-//   img.src = imagesVehicule[i];
-// })
-
 var prevButton = document.querySelectorAll(".prev");
 var nextButton = document.querySelectorAll(".next");
-// var image = document.querySelectorAll(".imgveh");
 var image1 = document.querySelector(".imgveh1");
 var image2 = document.querySelector(".imgveh2");
 var image3 = document.querySelector(".imgveh3");
 var image4 = document.querySelector(".imgveh4");
-var bouton1 = document.querySelectorAll(".bouton1");
-var bouton2 = document.querySelectorAll(".bouton2");
-var bouton3 = document.querySelectorAll(".bouton3");
-var bouton4 = document.querySelectorAll(".bouton4");
+var carrousel1 = document.querySelector('.carrousel1')
+var carrousel2 = document.querySelector(".carrousel2");
+var carrousel3 = document.querySelector(".carrousel3");
+var carrousel4 = document.querySelector(".carrousel4");
 
 for (var i = 0; i < prevButton.length; i++) {
   prevButton[i].addEventListener("click", function () {
-    if (this == bouton1 && prevButton ) {
+    if (this.parentNode.parentNode == carrousel1) {
       if (i > 0) {
         i--;
       } else {
         i = imagesVehicule.length - 1;
       }
       image1.src = imagesVehicule[i];
-    } else if (this == bouton2) {
+    } else if (this.parentNode.parentNode == carrousel2) {
       if (i > 0) {
         i--;
       } else {
         i = imagesVehicule.length - 1;
       }
       image2.src = imagesVehicule[i];
-    } else if (this == bouton3) {
+    } else if (this.parentNode.parentNode == carrousel3){
       if (i > 0) {
         i--;
       } else {
         i = imagesVehicule.length - 1;
       }
       image3.src = imagesVehicule[i];
-    } else if (this == bouton4) {
+    } else if (this.parentNode.parentNode == carrousel4){
       if (i > 0) {
         i--;
       } else {
@@ -104,28 +79,28 @@ for (var i = 0; i < prevButton.length; i++) {
 
 for (var i = 0; i < nextButton.length; i++) {
   nextButton[i].addEventListener("click", function () {
-    if (this == bouton1) {
+    if (this.parentNode.parentNode == carrousel1) {
       if (i < imagesVehicule.length - 1) {
         i++;
       } else {
         i = 0;
       }
       image1.src = imagesVehicule[i];
-    } else if (this == bouton2) {
+    } else if (this.parentNode.parentNode == carrousel2) {
       if (i < imagesVehicule.length - 1) {
         i++;
       } else {
         i = 0;
       }
       image2.src = imagesVehicule[i];
-    } else if (this == bouton3) {
+    } else if (this.parentNode.parentNode == carrousel3) {
       if (i < imagesVehicule.length - 1) {
         i++;
       } else {
         i = 0;
       }
       image3.src = imagesVehicule[i];
-    } else if (this == bouton4) {
+    } else if (this.parentNode.parentNode == carrousel4) {
       if (i < imagesVehicule.length - 1) {
         i++;
       } else {
