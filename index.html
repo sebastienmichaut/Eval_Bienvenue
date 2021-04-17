@@ -10,182 +10,234 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-        <img class="imagesHeader" name='imageHeader'>
-        <div class="nav-bar">
-            <div class="fixed-top">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-white p-4">
-                        <p class="text-black">Louer une voiture</p>
-                        <p class="text-black">Louer un utilitaire</p>
-                        <p class="text-black">Réserver un chauffeur</p>
-                        <p class="text-black">Découvrez nos agences</p>
-                        <p class="text-black">Mon compte</p>
-                        <p class="text-black">Contact</p>
-                    </div>
-                </div>
-                <nav class="navbar navbar-dark float-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </nav>
+      <img src="" id="imagesHeader" />
+      <div class="nav-bar">
+        <div class="fixed-top">
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-white p-4">
+              <p class="text-black">Louer une voiture</p>
+              <p class="text-black">Louer un utilitaire</p>
+              <p class="text-black">Réserver un chauffeur</p>
+              <p class="text-black">Découvrez nos agences</p>
+              <p class="text-black">Mon compte</p>
+              <p class="text-black">Contact</p>
             </div>
+          </div>
+          <nav class="navbar navbar-dark float-right">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
         </div>
-        <div class="container">
-            <div class="bienvenue">
-                <div>
-                    <h1>Bienvenue à Bord</h1>
-                </div>
-                <div>
-                    <h6>Location de voiture 24h/24 et 7j/7</h3>
-                </div>
-            </div>
-            <div class="sous-container">
-                <div class="searchbar">
-                    <div class="bar">
-                        <select class="form-select rounded border-0 p-2" id="inputGroupSelect01">
-                            <option selected>Adresse de départ</option>
-                            <option value="1">Paris</option>
-                            <option value="2">Bordeaux</option>
-                            <option value="3">Lyon</option>
-                        </select>
-                    </div>
-                    <div class="bar input-group">
-                        <input class="rounded border-0" type="text" placeholder="Début de location">
-                        <button class="fas fa-calendar-alt rounded border-0" type="button" id="button-addon2"></button>
-                    </div>
-                    <div class="bar input-group">
-                        <input class="rounded border-0" type="text"  placeholder="Fin de location">
-                        <button class="fas fa-calendar-alt rounded border-0" type="button" id="button-addon2"></button>
-                    </div>
-                    <div class="bar">
-                        <button class="validate rounded border-0" type="button">Valider ma recherche</button>
-                    </div>            
-                </div>
-            </div>
+      </div>
+      <div class="container">
+        <div class="bienvenue">
+          <div>
+            <h1>Bienvenue à Bord</h1>
+          </div>
+          <div>
+            <h6>Location de voiture 24h/24 et 7j/7</h6>
+          </div>
         </div>
+        <div class="sous-container">
+          <div class="searchbar">
+            <div class="bar">
+              <select class="form-select rounded border-0 p-2">
+                <option selected>Adresse de départ</option>
+                <option value="1">Paris</option>
+                <option value="2">Bordeaux</option>
+                <option value="3">Lyon</option>
+              </select>
+            </div>
+            <div class="bar input-group">
+              <input
+                class="rounded border-0"
+                type="text"
+                placeholder="Début de location"
+              />
+              <button
+                class="fas fa-calendar-alt rounded border-0"
+                type="button"
+              ></button>
+            </div>
+            <div class="bar input-group">
+              <input
+                class="rounded border-0"
+                type="text"
+                placeholder="Fin de location"
+              />
+              <button
+                class="fas fa-calendar-alt rounded border-0"
+                type="button"
+              ></button>
+            </div>
+            <div class="bar">
+              <button class="validate rounded border-0" type="button">
+                Valider ma recherche
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <Main>
-        <div class="tri">
-            <p>7 résultats</p>
-            <div>
-                <select class="btnTri btn" id="inputGroupSelect01">
-                    <option selected>Trier par</option>
-                    <option value="1">Prix croissant</option>
-                    <option value="2">Prix décroissant</option>
-                </select>
-            </div>
-        </div>
-        <div class="vehicules">
-            <div class="vehicule border-bottom pb-5">
-                <div class="carrousel carrousel1">
-                    <div>
-                        <button class="prev fas fa-caret-left border-0 bg-white"></button>
-                    </div>
-                    <div>
-                        <img class="imgveh1" src="/images/vehicule1.png" alt="">
-                    </div>
-                    <div>
-                        <button class="next fas fa-caret-right border-0 bg-white"></button>
-                    </div>
-                </div>
-                <div class=caract1>
-                    <h2>Peugeot 208</h2>
-                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
-                    <p>999 € - Agence de Paris</p>
-                    <button class="buttonveh" type="submit">Réserver et Payer</button>
-                </div>
-            </div>
-        </div>
-        <div class="vehicules">
-            <div class="vehicule border-bottom pb-5">
-                <div class="carrousel carrousel2">
-                    <div>
-                        <button class="prev fas fa-caret-left border-0 bg-white"></button>
-                    </div>
-                    <div>
-                        <img class="imgveh2" src="/images/vehicule2.png"  alt="">
-                    </div>
-                    <div>
-                        <button class="next fas fa-caret-right border-0 bg-white"></button>
-                    </div>
-                </div>
-                <div class=caract1>
-                    <h2>Ford Focus</h2>
-                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km supplémentaire).</p>
-                    <p>999 €</p>
-                    <button class="buttonveh" type="submit">Réserver et Payer</button>
-                </div>
-            </div>
-        </div>
-        <div class="vehicules">
-            <div class="vehicule border-bottom pb-5">
-                <div class="carrousel carrousel3">
-                    <div>
-                        <button class="prev fas fa-caret-left border-0 bg-white"></button>
-                    </div>
-                    <div>
-                        <img class="imgveh3" src="/images/vehicule3.png" alt="">
-                    </div>
-                    <div>
-                        <button class="next fas fa-caret-right border-0 bg-white"></button>
-                    </div>
-                </div>
-                <div class=caract1>
-                    <h2>Audi A1</h2>
-                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,55/km supplémentaire).</p>
-                    <p>1100 € - Agence de Paris</p>
-                    <button class="buttonveh" type="submit">Réserver et Payer</button>
-                </div>
-            </div>
-        </div>
-        <div class="vehicules">
-            <div class="vehicule border-bottom pb-5">
-                <div class="carrousel carrousel4">
-                    <div>
-                        <button class="prev fas fa-caret-left border-0 bg-white"></button>
-                    </div>
-                    <div>
-                        <img class="imgveh4" src="/images/vehicule4.png" alt="">
-                    </div>
-                    <div>
-                        <button class="next fas fa-caret-right border-0 bg-white"></button>
-                    </div>
-                </div>
-                <div class=caract1>
-                    <h2>Opel Mokka</h2>
-                    <p>Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,4/km supplémentaire).</p>
-                    <p>1150 € - Agence de Paris</p>
-                    <button class="buttonveh" type="submit">Réserver et Payer</button>
-                </div>
-            </div>
-        </div>
-        
-    </Main>
-    <footer>
+    <main>
+      <div class="tri">
+        <p>7 résultats</p>
         <div>
-            <img src="/images/agence.jpg" alt="">
+          <select class="btnTri btn">
+            <option selected>Trier par</option>
+            <option value="1">Prix croissant</option>
+            <option value="2">Prix décroissant</option>
+          </select>
         </div>
-        <div class="coord">
-            <p>Notre agence de paris</p>
-            <p>300 boulevard de vaugirard, 75015, Paris</p>
-            <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
-            <p>01 49 78 21 33</p>
-            <p>contact@vtc.com</p>
+      </div>
+      <div class="vehicules">
+        <div class="vehicule border-bottom pb-5">
+          <div class="carrousel carrousel1">
+            <div>
+              <button class="prev fas fa-caret-left border-0 bg-white"></button>
+            </div>
+            <div>
+              <img class="imgveh1" src="/images/vehicule1.png" alt="" />
+            </div>
+            <div>
+              <button
+                class="next fas fa-caret-right border-0 bg-white"
+              ></button>
+            </div>
+          </div>
+          <div class="caract1">
+            <h2>Peugeot 208</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km
+              supplémentaire).
+            </p>
+            <p>999 € - Agence de Paris</p>
+            <button class="buttonveh" type="submit">Réserver et Payer</button>
+          </div>
         </div>
+      </div>
+      <div class="vehicules">
+        <div class="vehicule border-bottom pb-5">
+          <div class="carrousel carrousel2">
+            <div>
+              <button class="prev fas fa-caret-left border-0 bg-white"></button>
+            </div>
+            <div>
+              <img class="imgveh2" src="/images/vehicule2.png" alt="" />
+            </div>
+            <div>
+              <button
+                class="next fas fa-caret-right border-0 bg-white"
+              ></button>
+            </div>
+          </div>
+          <div class="caract1">
+            <h2>Ford Focus</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,5/km
+              supplémentaire).
+            </p>
+            <p>999 €</p>
+            <button class="buttonveh" type="submit">Réserver et Payer</button>
+          </div>
+        </div>
+      </div>
+      <div class="vehicules">
+        <div class="vehicule border-bottom pb-5">
+          <div class="carrousel carrousel3">
+            <div>
+              <button class="prev fas fa-caret-left border-0 bg-white"></button>
+            </div>
+            <div>
+              <img class="imgveh3" src="/images/vehicule3.png" alt="" />
+            </div>
+            <div>
+              <button
+                class="next fas fa-caret-right border-0 bg-white"
+              ></button>
+            </div>
+          </div>
+          <div class="caract1">
+            <h2>Audi A1</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,55/km
+              supplémentaire).
+            </p>
+            <p>1100 € - Agence de Paris</p>
+            <button class="buttonveh" type="submit">Réserver et Payer</button>
+          </div>
+        </div>
+      </div>
+      <div class="vehicules">
+        <div class="vehicule border-bottom pb-5">
+          <div class="carrousel carrousel4">
+            <div>
+              <button class="prev fas fa-caret-left border-0 bg-white"></button>
+            </div>
+            <div>
+              <img class="imgveh4" src="/images/vehicule4.png" alt="" />
+            </div>
+            <div>
+              <button
+                class="next fas fa-caret-right border-0 bg-white"
+              ></button>
+            </div>
+          </div>
+          <div class="caract1">
+            <h2>Opel Mokka</h2>
+            <p>
+              Diesel, 5 portes, GPS, AutoRadio, Forfait 1000 km (0,4/km
+              supplémentaire).
+            </p>
+            <p>1150 € - Agence de Paris</p>
+            <button class="buttonveh" type="submit">Réserver et Payer</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <img src="/images/agence.jpg" alt="" />
+      </div>
+      <div class="coord">
+        <p>Notre agence de paris</p>
+        <p>300 boulevard de vaugirard, 75015, Paris</p>
+        <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+        <p>01 49 78 21 33</p>
+        <p>contact@vtc.com</p>
+      </div>
     </footer>
 
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
     <script src="/script.js"></script>
   </body>
 </html>

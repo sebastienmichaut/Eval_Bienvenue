@@ -11,7 +11,7 @@ var images = [
 var time = 7000;
 
 function changeImg() {
-  document.imageHeader.src = images[i];
+  document.querySelector('#imagesHeader').src = images[i];
     if (i < images.length - 1) {
       i++;
     }  else {
@@ -31,16 +31,16 @@ var imagesVehicule = [
   "/images/vehicule4.png",
 ];
 
-var prevButton = document.querySelectorAll(".prev");
-var nextButton = document.querySelectorAll(".next");
-var image1 = document.querySelector(".imgveh1");
-var image2 = document.querySelector(".imgveh2");
-var image3 = document.querySelector(".imgveh3");
-var image4 = document.querySelector(".imgveh4");
-var carrousel1 = document.querySelector('.carrousel1')
-var carrousel2 = document.querySelector(".carrousel2");
-var carrousel3 = document.querySelector(".carrousel3");
-var carrousel4 = document.querySelector(".carrousel4");
+let prevButton = document.querySelectorAll(".prev");
+let nextButton = document.querySelectorAll(".next");
+let image1 = document.querySelector(".imgveh1");
+let image2 = document.querySelector(".imgveh2");
+let image3 = document.querySelector(".imgveh3");
+let image4 = document.querySelector(".imgveh4");
+let carrousel1 = document.querySelector('.carrousel1')
+let carrousel2 = document.querySelector(".carrousel2");
+let carrousel3 = document.querySelector(".carrousel3");
+let carrousel4 = document.querySelector(".carrousel4");
 
 for (var i = 0; i < prevButton.length; i++) {
   prevButton[i].addEventListener("click", function () {
